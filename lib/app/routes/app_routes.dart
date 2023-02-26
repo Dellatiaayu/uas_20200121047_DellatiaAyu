@@ -9,6 +9,7 @@ abstract class Routes {
   static const PHOTO = _Paths.PHOTO;
   static const MENU = _Paths.MENU;
   static const REVIEW = _Paths.REVIEW;
+  static const PHOTOS = _Paths.PHOTOS;
 }
 
 abstract class _Paths {
@@ -19,4 +20,5 @@ abstract class _Paths {
   static const PHOTO = '/photo';
   static const MENU = '/menu';
   static const REVIEW = '/review';
+  static const PHOTOS = '/photos';
 }

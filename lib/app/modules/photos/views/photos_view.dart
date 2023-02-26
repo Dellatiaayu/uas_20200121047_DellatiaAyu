@@ -1,15 +1,13 @@
-import 'package:cafe_meraki_app/app/modules/menu/controllers/menu_controller.dart';
 import 'package:cafe_meraki_app/app/modules/photos/controllers/photos_controller.dart';
 import 'package:cafe_meraki_app/app/utils/style/Appcolors.dart';
 import 'package:cafe_meraki_app/app/utils/widget/header.dart';
-import 'package:cafe_meraki_app/app/utils/widget/menuwidget.dart';
 import 'package:cafe_meraki_app/app/utils/widget/profilewidget.dart';
 import 'package:cafe_meraki_app/app/utils/widget/sidebar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:ionicons/ionicons.dart';
 
-class MenuView extends GetView<MenuController> {
+class PhotosView extends GetView<PhotosController> {
   final GlobalKey<ScaffoldState> _drawerKey = GlobalKey();
 
   @override
@@ -118,7 +116,98 @@ class MenuView extends GetView<MenuController> {
                             ? BorderRadius.circular(30)
                             : BorderRadius.circular(10),
                       ),
-                      child: menuwidget(),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Column(
+                            children: [
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(25),
+                                child: const Image(
+                                  image: NetworkImage(
+                                      'https://i0.wp.com/suwatu.com/gambar/Tempat-Nongkrong-di-Cirebon.jpg?fit=1440%2C1683&ssl=1'),
+                                  height: 235,
+                                  width: 345,
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 20,
+                              ),
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(25),
+                                child: const Image(
+                                  image: NetworkImage(
+                                      'https://i0.wp.com/suwatu.com/gambar/Coffee-Meraki-Cirebon.jpg?resize=1000%2C1250&ssl=1'),
+                                  height: 235,
+                                  width: 345,
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                            ],
+                          ),
+                          const SizedBox(
+                            width: 20,
+                          ),
+                          Column(
+                            children: [
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(25),
+                                child: const Image(
+                                  image: NetworkImage(
+                                      'https://i0.wp.com/suwatu.com/gambar/Coffee-by-Meraki-Cirebon.jpg?resize=1000%2C1250&ssl=1'),
+                                  height: 235,
+                                  width: 345,
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 20,
+                              ),
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(25),
+                                child: const Image(
+                                  image: NetworkImage(
+                                      'https://i0.wp.com/suwatu.com/gambar/Cafe-Meraki-Cirebon.jpg?resize=1000%2C1250&ssl=1'),
+                                  height: 235,
+                                  width: 345,
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                            ],
+                          ),
+                          const SizedBox(
+                            width: 20,
+                          ),
+                          Column(
+                            children: [
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(25),
+                                child: const Image(
+                                  image: NetworkImage(
+                                      'https://i0.wp.com/suwatu.com/gambar/Coffee-by-Meraki.jpg?resize=1000%2C1250&ssl=1'),
+                                  height: 235,
+                                  width: 345,
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 20,
+                              ),
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(25),
+                                child: Image.asset(
+                                  'assets/images/meraki11.jpeg',
+                                  height: 235,
+                                  width: 345,
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                            ],
+                          )
+                        ],
+                      ),
                     ),
                   ),
                 ],

@@ -6,8 +6,8 @@ import '../modules/login/bindings/login_binding.dart';
 import '../modules/login/views/login_view.dart';
 import '../modules/menu/bindings/menu_binding.dart';
 import '../modules/menu/views/menu_view.dart';
-import '../modules/photo/bindings/photo_binding.dart';
-import '../modules/photo/views/photo_view.dart';
+import '../modules/photos/bindings/photos_binding.dart';
+import '../modules/photos/views/photos_view.dart';
 import '../modules/profile/bindings/profile_binding.dart';
 import '../modules/profile/views/profile_view.dart';
 import '../modules/review/bindings/review_binding.dart';
@@ -23,33 +23,33 @@ class AppPages {
   static final routes = [
     GetPage(
       name: _Paths.HOME,
-      page: () => const HomeView(),
+      page: () => HomeView(),
       binding: HomeBinding(),
     ),
     GetPage(
       name: _Paths.LOGIN,
-      page: () => const LoginView(),
+      page: () => LoginView(),
       binding: LoginBinding(),
     ),
     GetPage(
       name: _Paths.PROFILE,
-      page: () => const ProfileView(),
+      page: () => ProfileView(),
       binding: ProfileBinding(),
     ),
     GetPage(
-      name: _Paths.PHOTO,
-      page: () => const PhotoView(),
-      binding: PhotoBinding(),
-    ),
-    GetPage(
       name: _Paths.MENU,
-      page: () => const MenuView(),
+      page: () => MenuView(),
       binding: MenuBinding(),
     ),
     GetPage(
       name: _Paths.REVIEW,
-      page: () => const ReviewView(),
+      page: () => ReviewView(),
       binding: ReviewBinding(),
+    ),
+    GetPage(
+      name: _Paths.PHOTOS,
+      page: () => PhotosView(),
+      binding: PhotosBinding(),
     ),
   ];
 }
